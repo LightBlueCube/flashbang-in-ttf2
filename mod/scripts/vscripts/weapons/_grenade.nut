@@ -223,7 +223,7 @@ void function FlashPlayer( entity player, entity grenade, float distance )
 		return
 	if( PlayerCanSee( player, grenade, true, 60 ) )
 	{
-		ScreenFadeFromColor( player, 255, 255, 255, GraphCapped( distance, 1000, 2000, 255, 191 ), GraphCapped( distance, 1000, 2000, 2.0, 1.0 ), GraphCapped( distance, 0, 2000, 2.0, 0.1 ) )
+		ScreenFadeFromColor( player, 255, 255, 255, GraphCapped( distance, 1000, 2000, 255, 191 ), GraphCapped( distance, 1000, 2000, 2.0, 1.0 ), GraphCapped( distance, 0, 1500, 2.0, 0.1 ) )
 		thread FlashSound( player, GraphCapped( distance, 0, 2000, 2.0, 0.2 ) )
 	}
 	else
